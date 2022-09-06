@@ -1,4 +1,6 @@
-﻿class Program {
+﻿/*
+Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+class Program {
   static void Main() {
     int a, b;
     Console.Write("a = ");
@@ -11,3 +13,4 @@
         Console.WriteLine("max = "+b); 
   }
 }
+*/
