@@ -14,3 +14,24 @@ class Program {
   }
 }
 */
+
+/*
+Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+class Program {
+  static void Main() {
+    int a1, a2, a3, max;
+    Console.Write("a1 = ");
+    a1 = int.Parse(Console.ReadLine());
+    Console.Write("a2 = ");
+    a2 = int.Parse(Console.ReadLine());
+    Console.Write("a3 = ");
+    a3 = int.Parse(Console.ReadLine());
+    max = a1;
+    if(a2 > max)
+        max = a2;
+    if(a3 > max)
+        max = a3;
+    Console.WriteLine("max = "+max);
+  }
+}
+*/
