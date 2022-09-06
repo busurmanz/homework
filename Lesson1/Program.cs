@@ -1,13 +1,13 @@
 ﻿class Program {
   static void Main() {
-    int a1, a2;
-    Console.Write("a1 = ");
-    a1 = int.Parse(Console.ReadLine());
-    Console.Write("a2 = ");
-    a2 = int.Parse(Console.ReadLine());
-    if(a1 > a2)
-        Console.Write("max = "+a1);
+    int a, b;
+    Console.Write("a = ");
+    a = int.Parse(Console.ReadLine());
+    Console.Write("b = ");
+    b = int.Parse(Console.ReadLine());
+    if(a > b)
+        Console.WriteLine("max = "+a);
     else
-        Console.Write("max = "+a2); 
+        Console.WriteLine("max = "+b); 
   }
 }
