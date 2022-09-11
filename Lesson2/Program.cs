@@ -24,6 +24,7 @@ class Program {
 }
 */
 
+/*
 class Program {
   static void Main() {
     int a1, a2, n1, n2, i;
@@ -52,3 +53,5 @@ class Program {
     
   }
 }
+*/
+
