@@ -1,12 +1,12 @@
 ﻿/*
-Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+//Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 class Program {
   static void Main() {
     int a, b;
     Console.Write("a = ");
-    a = int.Parse(Console.ReadLine());
+    a = Convert.ToInt32(Console.ReadLine());
     Console.Write("b = ");
-    b = int.Parse(Console.ReadLine());
+    b = Convert.ToInt32(Console.ReadLine());
     if(a > b)
         Console.WriteLine("max = "+a);
     else
@@ -21,11 +21,11 @@ class Program {
   static void Main() {
     int a1, a2, a3, max;
     Console.Write("a1 = ");
-    a1 = int.Parse(Console.ReadLine());
+    a1 = Convert.ToInt32(Console.ReadLine());
     Console.Write("a2 = ");
-    a2 = int.Parse(Console.ReadLine());
+    a2 = Convert.ToInt32(Console.ReadLine());
     Console.Write("a3 = ");
-    a3 = int.Parse(Console.ReadLine());
+    a3 = Convert.ToInt32(Console.ReadLine());
     max = a1;
     if(a2 > max)
         max = a2;
@@ -43,7 +43,7 @@ class Program {
   static void Main() {
     int a;
     Console.Write("a = ");
-    a = int.Parse(Console.ReadLine());
+    a = Convert.ToInt32(Console.ReadLine());
         if(a%2 == 0)
             Console.WriteLine("even");
         else
@@ -58,7 +58,7 @@ class Program {
   static void Main() {
     int N;
     Console.Write("N = ");
-    N = int.Parse(Console.ReadLine());
+    N = Convert.ToInt32(Console.ReadLine());
     for(int i = 1; i < N; i++)
     {
         if(i%2 == 0)
