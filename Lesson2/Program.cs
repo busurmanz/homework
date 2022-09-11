@@ -1,4 +1,5 @@
 ﻿/*
+Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 class Program {
   static void Main() {
     int a1, a2, n1, n2, i;
@@ -19,12 +20,13 @@ class Program {
         a1%=n2;
         n2/=10;
     }
-    Console.Write("num = "+nums[1]);
+    Console.WriteLine("num = "+nums[1]);
   }
 }
 */
 
 /*
+Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 class Program {
   static void Main() {
     int a1, a2, n1, n2, i;
@@ -48,13 +50,16 @@ class Program {
         a1%=n2;
         n2/=10;
     }
-    Console.Write("num = "+nums[2]);
+    Console.WriteLine("num = "+nums[2]);
     }
     
   }
 }
 */
 
+
+/*
+Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 class Program {
   static void Main() {
     int a;
@@ -66,3 +71,4 @@ class Program {
         Console.WriteLine("no");
   }
 }
+*/
