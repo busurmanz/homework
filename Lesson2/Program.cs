@@ -55,3 +55,14 @@ class Program {
 }
 */
 
+class Program {
+  static void Main() {
+    int a;
+    Console.Write("a = ");
+    a = int.Parse(Console.ReadLine());
+    if(a == 6 || a==7)
+        Console.WriteLine("yes");
+    else 
+        Console.WriteLine("no");
+  }
+}
