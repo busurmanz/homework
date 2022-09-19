@@ -33,3 +33,27 @@ class Program
  }
 */
 
+/*
+//Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+class Program
+ {
+  static void Main() {
+    int[] A = {5, 8, 5, 7, 8, 3, 13, 22, 3, 9, 4};
+    int max = A[0];
+    int min = A[0];
+    for (int i = 1; i < A.Length; i++ )
+    {
+        if (A[i] > max)
+        {
+            max = A[i];
+        }
+        if (A[i] < min)
+        {
+            min = A[i];
+        }
+    }
+    int count = max - min;
+    Console.WriteLine(count);
+  }
+}
+*/
