@@ -58,6 +58,7 @@ class Program
   }
 }
 */
+
 /*
 //Задача 34, второй вариант решения через генератор случайных чисел.
 class Program
@@ -77,6 +78,32 @@ class Program
       for(int i = 0; i < A.Length; i++)
       {
         Console.Write(A[i]);
+          Console.Write(' ');
+      }
+      Console.WriteLine(count);
+  }
+}
+*/
+
+/*
+//Задача 36, решение через генератор случайных чисел
+class Program
+ {
+  static void Main() {
+      Random rnd = new Random();
+      int count = 0;
+      int[] A = new int[5];
+      for(int i = 0; i < A.Length; i++)
+      {
+          A[i] = rnd.Next();
+          if (i % 2 == 1)
+          {
+              count = count + A[i];
+          }
+      }
+      for(int i = 0; i < A.Length; i++)
+      {
+          Console.Write(A[i]);
           Console.Write(' ');
       }
       Console.WriteLine(count);
