@@ -2,7 +2,8 @@
 //Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 class Program 
 {
-  static void Main() {
+   static void Main() 
+   {
     int[] A = {255 , 264, 280, 277, 100, 133};
     int count = 0;
     for (int i = 0; i < A.Length; i++)
@@ -54,6 +55,31 @@ class Program
     }
     int count = max - min;
     Console.WriteLine(count);
+  }
+}
+*/
+/*
+//Задача 34, второй вариант решения через генератор случайных чисел.
+class Program
+ {
+  static void Main() {
+      Random rnd = new Random();
+      int count = 0;
+      int[] A = new int[5];
+      for(int i = 0; i < A.Length; i++)
+      {
+          A[i] = rnd.Next(100, 999);
+          if (A[i] % 2 == 0)
+          {
+              count = count + 1;
+          }
+      }
+      for(int i = 0; i < A.Length; i++)
+      {
+        Console.Write(A[i]);
+          Console.Write(' ');
+      }
+      Console.WriteLine(count);
   }
 }
 */
