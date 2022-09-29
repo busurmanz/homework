@@ -136,5 +136,35 @@ class Program
 }
 */
 
+/*
+//Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4. 
+class Program 
+{
+  static void Main() {
+    int[,] array = new int[4, 4];
+    Random random = new Random();
+    Console.WriteLine();
+    
+    for (int i = 0; i < 4; i++)
+            array[0, i] = random.Next(100);
+    for (int i = 1; i < 4; i++)
+            array[i, 3] = random.Next(100);
+    for (int i = 2; i > -1; i--)
+            array[3, i] = random.Next(100);
+    for (int i = 2; i > 0; i--)
+            array[i, 0] = random.Next(100);
+    for (int i = 1; i < 3; i++)
+            array[1, i] = random.Next(100);
+    array[2, 2] = random.Next(100);
+    array[2, 1] = random.Next(100);
+    
+    for(int i = 0; i < 4; i++)
+    {
+        for(int j = 0; j < 4; j++)
+            Console.Write(array[i,j]+" ");
+        Console.WriteLine();
+    }
+  }
+}
+*/
 
-//
