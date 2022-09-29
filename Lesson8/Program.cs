@@ -38,6 +38,7 @@ class Program
 }
 */
 
+/*
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 class Program 
 {
@@ -98,3 +99,42 @@ class Program
         Console.WriteLine("Такие матрицы нельзя перемножить ");
   }
 }
+*/
+
+/*
+//Задача 60: Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+class Program 
+{
+  static void Main() {
+    Console.WriteLine("Введите длинну массива ");
+    int x = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите ширину массива ");
+    int y = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите высоту массива ");
+    int z = Convert.ToInt32(Console.ReadLine());
+    int[,,] array = new int[x, y, z];
+    int count = x * y * z;
+    int buf = 10;
+    
+    if (count <= 90)
+    {
+        for (int j = 0; j < x; j++)
+            for (int k = 0; k < y; k++)
+            {
+                for (int m = 0; m < z; m++)
+                {
+                    array[j, k, m] = buf;
+                    Console.WriteLine(array[j, k, m]+"("+j+" "+k+" "+m+")");
+                    buf += 1;
+                }
+                Console.WriteLine();
+            }
+    }
+    else
+        Console.WriteLine("Нельзя задать массив такой размерности из двухзначных чисел ");
+  }
+}
+*/
+
+
+//
