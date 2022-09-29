@@ -39,18 +39,19 @@ class Program
 */
 
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
-class HelloWorld {
+class Program 
+{
   static void Main() {
-    Console.WriteLine("Введите количество строк первой матрицы");
-    int m1 = int.Parse(Console.ReadLine());
-    Console.WriteLine("Введите количество столбцов первой матрицы");
-    int n1 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Введите количество строк первой матрицы ");
+    int m1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите количество столбцов первой матрицы ");
+    int n1 = Convert.ToInt32(Console.ReadLine());
     int[,] matrix1 = new int[m1, n1];
     
-    Console.WriteLine("¬ведите количество строк второй матрицы");
-    int m2 = int.Parse(Console.ReadLine());
-    Console.WriteLine("¬ведите количество столбцов второй матрицы");
-    int n2 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Введите количество строк второй матрицы ");
+    int m2 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите количество столбцов второй матрицы ");
+    int n2 = Convert.ToInt32(Console.ReadLine());
     int[,] matrix2 = new int[m2, n2];
     
     if (n1 == m2)
@@ -64,7 +65,7 @@ class HelloWorld {
             for (int j = 0; j < n1; j++)
             {
                 matrix1[i, j] = random.Next(100);
-                Console.Write(matrix1[i, j]+" ");
+                Console.Write(matrix1[i, j] + " ");
             }
             Console.WriteLine();
         }
@@ -75,7 +76,7 @@ class HelloWorld {
             for (int j = 0; j < n2; j++)
             {
                 matrix2[i, j] = random.Next(100);
-                Console.Write(matrix2[i, j]+" ");
+                Console.Write(matrix2[i, j] + " ");
             }
             Console.WriteLine();
         }
