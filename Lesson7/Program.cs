@@ -59,3 +59,34 @@ class Program
 }
 */
 
+/*
+//Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+class Program 
+{
+  static void Main() {
+    int m = 3;
+    int n = 3;
+    int[,] array = new int[m, n];
+    double[] arraycount = new double[n];
+    
+    Random random = new Random();
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            array[i, j] = random.Next(100);
+            Console.Write(array[i, j]+" ");
+            arraycount[j] = arraycount[j] + array[i, j];
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+    
+    for (int i = 0; i < n; i++)
+    {
+        Console.Write(arraycount[i]/n+" ");
+    }
+    Console.WriteLine();
+  }
+}
+*/
