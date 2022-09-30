@@ -3,9 +3,9 @@
 class Program 
 {
   static void Main() {
-    Console.WriteLine("¬ведите количество строк");
+    Console.WriteLine("Введите количество строк ");
     int m = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("¬ведите количество столбцов");
+    Console.WriteLine("Введите количество столбцов ");
     int n = Convert.ToInt32(Console.ReadLine());
     int[,] array = new int[m, n];
     
@@ -15,7 +15,7 @@ class Program
         for (int j = 0; j < n; j++)
         {
             array[i, j] = random.Next(100);
-            Console.Write(array[i, j]+" ");
+            Console.Write(array[i, j] + " ");
         }
         Console.WriteLine();
     }
@@ -43,7 +43,7 @@ class Program
     {
         for (int j = 0; j < n; j++)
         {
-            Console.Write(array[i, j]+" ");
+            Console.Write(array[i, j] + " ");
         }
         Console.WriteLine();
     }
