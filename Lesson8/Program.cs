@@ -1,4 +1,57 @@
 ﻿/*
+//Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+class Program 
+{
+  static void Main() {
+    Console.WriteLine("¬ведите количество строк");
+    int m = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("¬ведите количество столбцов");
+    int n = Convert.ToInt32(Console.ReadLine());
+    int[,] array = new int[m, n];
+    
+    Random random = new Random();
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            array[i, j] = random.Next(100);
+            Console.Write(array[i, j]+" ");
+        }
+        Console.WriteLine();
+    }
+    
+    Console.WriteLine();
+    
+    int buf;
+    for (int k = 0; k < m; k++)
+    {
+        for (int i = 0; i < n - 1; i++)
+        {
+            for (int j = i + 1; j < n; j++)
+            {
+                if (array[k, i] > array[k, j])
+                {
+                    buf = array[k, i];
+                    array[k, i] = array[k, j];
+                    array[k, j] = buf;
+                }
+            }
+        }
+    }
+    
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            Console.Write(array[i, j]+" ");
+        }
+        Console.WriteLine();
+    }
+  }
+}
+*/
+
+/*
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 class Program 
 {
@@ -142,36 +195,6 @@ class Program
 {
   static void Main() {
     int[,] array = new int[4, 4];
-    Random random = new Random();
-    Console.WriteLine();
-    
-    for (int i = 0; i < 4; i++)
-            array[0, i] = random.Next(100);
-    for (int i = 1; i < 4; i++)
-            array[i, 3] = random.Next(100);
-    for (int i = 2; i > -1; i--)
-            array[3, i] = random.Next(100);
-    for (int i = 2; i > 0; i--)
-            array[i, 0] = random.Next(100);
-    for (int i = 1; i < 3; i++)
-            array[1, i] = random.Next(100);
-    array[2, 2] = random.Next(100);
-    array[2, 1] = random.Next(100);
-    
-    for(int i = 0; i < 4; i++)
-    {
-        for(int j = 0; j < 4; j++)
-            Console.Write(array[i,j]+" ");
-        Console.WriteLine();
-    }
-  }
-}
-*/
-
-class Program 
-{
-  static void Main() {
-    int[,] array = new int[4, 4];
     int buf = 0;
     Console.WriteLine();
 
@@ -212,3 +235,4 @@ class Program
     }
   }
 }
+*/
