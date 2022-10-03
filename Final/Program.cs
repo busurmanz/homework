@@ -1,7 +1,7 @@
 ﻿class Programm 
 {
   static void Main() {
-    string[] array1 = {"qaz", "wsx", "mvgdeuiu", "asdf", "tgb", "a", "ik", "gsfgdj", "fff"}; 
+    string[] array1 = {"qwe", "ytr", "123456", "-2", "123", "asdfgh", ":-)"}; 
     string[] array2 = new string[array1.Length]; 
     int count = 0; 
     for(int i = 0; i < array1.Length; i++) 
